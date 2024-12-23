@@ -1,0 +1,462 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+  }
+
+  .field {
+    margin-bottom: 10px;
+  }
+  
+  .field label {
+    display: block;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4 {
+    font-weight: bold;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  header {
+    background: linear-gradient(45deg, #00bcd4, #ff4081);
+    padding: 15px 0;
+    
+  }
+
+  .bg {
+    background:  #c5daf3;
+    padding: 15px 0;
+    border-radius: 15px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+  section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: rgb(91, 2, 93);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 2px;
+  }
+
+  .welcome {
+    font-family: 'Pacifico', cursive;
+  }
+  
+  /* Contact Form */
+  form input, form button {
+    width: 80%;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  form button {
+    background-color: #00bcd4;
+    color: white;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #ff4081;
+  }
+  
+  #form-message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: green;
+  }
+  
+  /* Footer */
+  footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+/* General Styling for Products Page */
+#products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Product Category Navigation Menu */
+.products-menu {
+    position: absolute; /* Initially positioned normally */
+    top: 80px; /* Position it just below the header initially */
+    left: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 100;
+    width: auto;
+    transition: top 0.3s ease; /* Smooth transition when it becomes sticky */
+}
+
+.products-menu.sticky {
+    position: fixed; /* Becomes fixed once it reaches the top */
+    top: 0; /* Stick to the top of the page */
+}
+
+
+.products-menu label {
+    display: inline-block;
+    color: #00bcd4;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.products-menu select {
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    color: #00bcd4;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #00bcd4;
+    transition: all 0.3s ease;
+}
+
+
+.products-menu select:hover {
+    background-color: #00bcd4;
+    color: white;
+}
+
+
+/* Product Categories */
+.product-category {
+    margin-bottom: 50px;
+}
+
+.product-category h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00bcd4;
+}
+
+.product-listing {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.product-itemo {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-item h4 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 1em;
+    color: #888;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #ff4081;
+}
+
+ /* About Us Page */
+ .about-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .about-text {
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .about-text h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .about-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .about-images img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .background-image {
+    background-size: cover;
+    background-position: center;
+    background-image: url('cavachon1.jpg');
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-radius: 25px;
+  }
+
+  .dropbtn {
+    background-color: #00bcd4;
+    color: white;
+    padding: 16px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    width: 500px;
+    border-radius: 10px;
+  }
+
+  .dropbtn img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+   
+  }
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+    text-align: center;
+  }
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  /* Change the background color of the dropdown button when it's
+  clicked on (add the class "active" to the dropdown button)*/
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #f589ad;
+  }
+  
+  @media (max-width: 768px) {
+    
+    nav ul {
+      flex-direction: column;
+    }
+
+    .products-menu {
+      position: relative;  /* Change position from absolute to relative */
+      top: auto;  /* Remove the top offset */
+      width: 100%;  /* Make the menu span the full width of the screen */
+      padding: 10px;  /* Reduce padding for smaller screens */
+      }
+  
+    .product-listing {
+      flex-direction: row;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+
+    .product-item {
+      max-width: 200px;
+      max-height: 400px;
+    
+      
+    }
+  
+    .about-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-text {
+      max-width: 80%;
+    }
+  
+    .about-images img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .dropbtn {
+      width: 100%;
+    }
+
+    .dropdown-content {
+      width: 100%;
+    }
+
+    .dropbtn {
+      z-index: 100;
+    }
+  }
+  
+  /* For Mobile Phones */
+  @media (max-width: 480px) {
+    nav ul {
+      flex-direction: column;
+    }
+  
+    .background-image {
+    width: auto;
+    height: 150px;
+    }
+
+    .product-item {
+      width: 100%;
+      max-width: 220px;
+    }
+
+    .product-item h4 {
+      font-size: 1em;
+    }
+  
+    .about-text {
+      max-width: 90%;
+    }
+  
+    .about-images img {
+      width: 120px;
+      height: 120px;
+    }
+  
+    .dropbtn {
+      width: 100%;
+      font-size: 18px;
+    }
+
+    .dropdown-content {
+      width: 100%;
+    }
+  
+    header {
+      padding: 10px 0;
+    }
+  
+    section {
+      padding: 30px 10px;
+    }
+  
+    footer {
+      padding: 10px 0;
+    }
+
+    .products-menu {
+      width: 100%;  /* Ensure it takes up the full screen width */
+      padding: 10px;  /* Slightly smaller padding for smaller devices */
+     }
+  }
